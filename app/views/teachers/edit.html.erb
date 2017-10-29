@@ -1,0 +1,31 @@
+<div class='columns'>
+  <div class='column is-one-quarter'></div>
+  <div class='column is-one-half'>
+    <div class='title is-two'>Edit Your Details</div>
+<%= form_for @teacher do |f| %>
+  <div class="field">
+    <%= f.label :first_name, class: 'label' %>
+  <div class="control">
+    <%= f.text_field :first_name, class: 'input' %>
+  </div>
+</div>
+  <div class="field">
+    <%= f.label :last_name, class: 'label' %>
+  <div class="control">
+    <%= f.text_field :last_name, class: 'input' %>
+  </div>
+</div>
+  <div class="field ">
+    <%= f.label :email, class: 'label' %>
+  <div class="control">
+    <%= f.email_field :email, class: 'input' %>
+
+  </div>
+</div>
+
+<div class='field'>
+  <%= f.submit 'Update Details', class: 'button is-link is-outlined'%>
+</div>
+</div>
+<% end %>
+<div class='column is-one-quarter'>
